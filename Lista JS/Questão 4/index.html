@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATIVIDADE 4</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		function Mudarestado(el) {
+			var display = document.getElementById(el).style.display;
+			var botao = document.getElementById("meuBotao");
+
+			if (display == "none") {
+				document.getElementById(el).style.display = 'block';
+				botao.innerHTML = "Ocultar";
+			}
+			else {
+				document.getElementById(el).style.display = 'none';
+				botao.innerHTML = "Mostrar";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="minhaDiv">
+		<h1>Texto a ser ocultado</h1>
+	</div>
+	<button id="meuBotao" type="button" onclick="Mudarestado('minhaDiv')">
+		Ocultar
+	</button>
+</body>
+
+</html>

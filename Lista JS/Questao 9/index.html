@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ATIVIDADE 9</title>
+    <script>
+        function Intercalar() {
+            var n1 = document.getElementById('nome').value;
+            var n2 = document.getElementById('nome2').value;
+            var array = n1.split("");
+            var array2 = n2.split("");
+            var tam = n1.length;
+            var mensagem = ("");
+            if (tam < (n2.length)) {
+                tam = n2.length;
+            }
+            for (var i = 0; i < tam; i++) {
+                mensagem = (mensagem + array[i]);
+                mensagem = (mensagem + array2[i]);
+            }
+            document.getElementById('resultado').value = mensagem;
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome2" id="nome2">
+            <br>
+            <input type="button" onclick="Intercalar()" value="Intercalar">
+            <br>
+            <input type="text" disabled name="resultado" id="resultado">
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ATIVIDADE 6</title>
+    <script type="text/javascript">        
+        function palavraPalindromo() {
+            var str = document.getElementById('nome').value;
+            var resultado;
+            for (var i = 0; i < str.length / 2; i++) {
+                if (str[i] != str[str.length - i - 1]) {
+                    resultado = ("Nao e Palindromo");
+                } else {
+                    resultado = ("E Palindromo");
+                }
+            }
+            alert(resultado);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="nome" id="nome">
+        <input type="button" onclick="palavraPalindromo();" value="Verificar">
+    </div>
+</body>
+
+</html>

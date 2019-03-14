@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>ATIVIDADE 5</title>
+    </head>
+    <body>
+        <main>
+                <form  method="post" name="dados" onSubmit="return enviardados();" >
+                <label for="login">login: </label>
+                <input type="text" id="login"/><br/>
+                <label for="senha">senha: </label>
+                <input type="password" id="senha"/><br/>
+                <label for="Confirmação">Confirmação: </label>
+                <input type="password" id="Confirmacao"/><br/>
+                <input name="Submit" type="submit"  class="formobjects" value="Enviar dados">
+            </form>
+            <script type"text/javascript">
+                function enviardados(){
+                    if((document.dados.login.value=="")||(document.dados.senha.value=="")||(document.dados.Confirmacao.value=="")){
+                        alert("Preencha todos os campos");
+                    }else if((document.dados.senha.value)!=(document.dados.Confirmacao.value)){
+                        alert("Senhas diferente!");
+                    }   
+                }            
+            </script>           
+        </main>
+    </body>
+</html>
