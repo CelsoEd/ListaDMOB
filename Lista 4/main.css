@@ -1,0 +1,41 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    background: #ddd;
+    }
+
+body {
+    margin: 1em auto; 
+    width: 650px; 
+    background: #fff;
+    }
+
+header { 
+    background: #CF3;
+    }
+
+nav { 
+    background: #9F3;
+    }
+
+#menulateral {
+    float: right; 
+    width: 165px; 
+    background: #6F9;
+}
+
+
+
+main {
+    float: left; 
+    width: 440px; 
+    background: #9FC;
+    margin: 20px 0 0 20px;
+}
+
+
+footer {
+    margin: 20px 0 0 0;
+    clear: both; 
+    background: #FF9;
+}

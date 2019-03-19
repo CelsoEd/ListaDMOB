@@ -1,0 +1,61 @@
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.menu, .sub-menu {
+    list-style: none;
+    background: -webkit-linear-gradient(#290e69, rgb(114, 4, 4));
+}
+
+.sub-menu {
+    background: -webkit-linear-gradient(#690e38, rgb(33, 49, 3));
+}
+
+.menu a {   
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu>li {
+    float: left;
+}
+
+.menu>li:hover {
+    background: rgba(90, 114, 4, 0.158);
+}
+
+.menu li:hover>.sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.sub-menu li:hover {
+    background: rgb(90, 114, 4, 0.158);
+}
+
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
